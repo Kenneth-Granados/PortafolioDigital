@@ -1,0 +1,53 @@
+<> Clases para la grid(cuadriula) que consta de 1 fila y 12 columnas
+* .row  (fila)
+* .col-  (columna) despues del guión va el numero de columnas que se asignaran al elemento, y si solo se deja el col que se distribuira de forma equitativa para llenar la fila
+* .col-sm-   
+* .col-md-  
+* .col-lg-   
+* .col-xl-
+
+<>Abreviaciones | dimensiones(en ancho) de cada abreviaciones
+* Extra small(xs) => Muy pequeño | < 576px (.col-)
+* Small(sm) => Pequeño | >= 576px
+* Medium(md) => Mediano | >= 768px
+* Large(lg) => Grande | >= 992px
+* Extra large(xl) => Muy grande | >= 1200px
+* Extra extra large(xxl) => Muy muy grande | >= 1400px
+
+<>Breakpoint: Dimesión(ancho) a partir de la cual podemos cambiar el estilo o la estructura de la página Web.
+<>Estrucura de la grid: Un contenedor que puede tener filas y cada fila contiene 12 columnas
+* Un contenedor es un elemento html que va a contener toda la estructura o elementos que queremos construir
+<> Clases de contenedores en boostsrap
+* .container =>Crea un contenedor responsivo con un ancho máximo fijo que depende del tamaño del dispositivo
+* .container-fluid =>Crea un contenedor responsivo que cubre el 100% del ancho de la ventana
+* .container-abreviación => antes del que llegue a esa dimension abarcara la maximo de la ventana hasta llegar a esa dimension que sera el anchomaximo
+<> Los elementos de una fila pueden ocupar varias columnas
+* Las columnas de los elementos de una fila deben sumar 12 para que estén ubicados en la misma linea, si suman más de 12 las columnas adicionales se colocaran en una linea nueva
+<>Flexbox: Permite que los elementos responsivos ubicados dentro de un contenedor se distribuyan automáticamente en base al tamaño del dispositivo
+* .d-flex => cra un contenedor flexible
+<>Propiedades Flexbox
+<> flex-direction => Establece el eje principal del contenedor, la dirección en la cual se van a colocar los elementos dentro del contenedor
+<>Valores
+* row =>eje horizontal en la filas el eje principal es el horizontal
+* column =>eje vertical en la columnas el eje principal es el vertical
+//Menos usados
+* row-reverse
+* column-reverse
+<>justify-content =>Define cómo se distribuyen los elementos en el eje principal | clase boostsrap
+* flex-start | .justify-content-start
+* flex-end | .justify-content-end
+* center | .justify-content-center
+* space-between | .justify-content-between
+* space-around | .justify-content-around
+* space-evenly | .justify-content-evenly
+<> align-items => Define cómo se distribuyen los elementos en el eje perpendicular al eje principal
+* flex-start | .align-items-start
+* flex-end | .align-items-end
+* center | .align-items-center
+* baseline | .align-items-baseline
+* stretch(estirar) | .align-items-stretch
+<> flex-wrap => Determina si los elementosdeben ser ajustados para que siempre estén en una misma linea o si se les permite distribuirse en varias líneas si es necesario.
+* flex-wrap:wrap | .flex-wrap
+* flex-wrap:nowrap (por defecto) | .flex-nowrap
+* flex-wrap:wrap-reverse | .flex-wrap-reverse
+
